@@ -1,12 +1,12 @@
-import Nav from "./components/Nav"
+import { BrowserRouter } from "react-router-dom";
+import Home from "./views/Home"
 
 function App() {
   
-
   return (
-    <div className="">
-      <Nav/>
-    </div>
+    <BrowserRouter>
+      <Home/>
+    </BrowserRouter>
   )
 }
 
