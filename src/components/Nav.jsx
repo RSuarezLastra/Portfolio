@@ -13,21 +13,21 @@ const Nav = () => {
                     <li>
                         <BsMoonStarsFill size={16} className="cursor-pointer"/>
                     </li>
-                    <li className="ml-10 font-semibold">
+                    <li className="ml-10 text-lg font-semibold text-seance-700">
                         <Link to="/">Home</Link>
                     </li>
-                    <li className="ml-10 font-semibold">
+                    <li className="ml-10 text-lg font-semibold">
                         <Link to="/skills">Skills</Link>
                     </li>
-                    <li className="ml-10 font-semibold">
+                    <li className="ml-10 text-lg font-semibold">
                         <Link to="/projects">Projects</Link>
                     </li> 
-                    <li className="ml-10 font-semibold">
+                    <li className="ml-10 text-lg font-semibold">
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
                 <div className="md:hidden">
-                    <AiOutlineMenu size={20}/>
+                    <AiOutlineMenu size={25}/>
                 </div>
             </nav>
         </>
