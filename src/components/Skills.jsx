@@ -12,7 +12,7 @@ import postg from '/src/img/postgresql_logo.png';
 
 const Skills = () => {
     return (
-        <div className='w-full min-h-screen mt-10 sm:mt-5 mb-20 py-10'>
+        <div className='w-full  mt-1 sm:mt-5 mb-10 sm:mb-20 py-10'>
             <h2 className="text-center font-semibold text-4xl mb-20">Skills</h2>
             <div className="mx-auto w-3/4 grid  grid-cols-3 sm:grid-cols-4 gap-10 ">
                 <div className='mx-auto w-14 sm:w-20'>
