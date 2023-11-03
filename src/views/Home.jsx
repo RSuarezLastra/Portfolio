@@ -4,14 +4,16 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 
 const Home = () => {
-    return(
+    return (
         <div className="bg-shark-100 dark:bg-neutral-900 min-h-screen">
-            <Nav/>
-            <Intro/>
-            <Skills/>
-            <Projects/>
+            <div className="pt-5">
+                <Nav />
+            </div>
+            <Intro />
+            <Skills />
+            <Projects />
         </div>
     )
-} 
+}
 
 export default Home;

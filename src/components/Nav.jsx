@@ -4,7 +4,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 
 
-
 const Nav = () => {
 
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -25,7 +24,7 @@ const Nav = () => {
 
     return (
         <>
-            <nav className="w-full  bg-slate-50 dark:bg-neutral-800 flex justify-between p-4 md:px-12 shadow-xl">
+            <nav className=" mx-auto w-3/4 rounded-full bg-slate-50 dark:bg-neutral-800 flex justify-between p-4 md:px-12 shadow-xl">
                 <div>
                     <p>logo</p>
                 </div>
