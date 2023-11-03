@@ -5,7 +5,7 @@ import Projects from "../components/Projects";
 
 const Home = () => {
     return(
-        <div className="bg-shark-100 dark:shadow-shark-900 min-h-screen">
+        <div className="bg-shark-100 dark:bg-neutral-900 min-h-screen">
             <Nav/>
             <Intro/>
             <Skills/>
