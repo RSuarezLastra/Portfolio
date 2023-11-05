@@ -24,7 +24,7 @@ const Nav = () => {
 
     return (
         <>
-            <nav className=" mx-auto w-3/4 rounded-full bg-slate-50 dark:bg-neutral-800 flex justify-between p-4 md:px-12 shadow-xl">
+            <nav className=" mx-auto w-3/4 rounded-full bg-slate-50 dark:bg-neutral-800 flex justify-between p-4 md:px-10 shadow-xl">
                 <div>
                     <p>logo</p>
                 </div>
@@ -34,17 +34,17 @@ const Nav = () => {
                             {theme === 'dark' ? (< BsSunFill size={16} />) : (<BsFillMoonFill size={16} />)}
                         </button>
                     </li>
-                    <li className="ml-10 text-lg font-semibold text-seance-700 ">
-                        <Link to="/">Home</Link>
+                    <li className="ml-10  hover:bg-slate-200/60 dark:hover:bg-slate-600/25 rounded-full transition-all ease-in px-2 ">
+                        <Link className='text-lg font-semibold dark:text-slate-100 ' to="/">About</Link>
                     </li>
-                    <li className="ml-10 text-lg font-semibold dark:text-slate-50">
-                        <Link to="/skills">Skills</Link>
+                    <li className="ml-10  hover:bg-slate-200/60 rounded-full transition-all ease-in px-2 dark:hover:bg-slate-600/25">
+                        <p className='text-lg font-semibold  dark:text-slate-100 '><Link to="/">Skills</Link></p>
                     </li>
-                    <li className="ml-10 text-lg font-semibold dark:text-slate-50" >
-                        <Link to="/projects">Projects</Link>
+                    <li className="ml-10  hover:bg-slate-200/60 rounded-full transition-all ease-in px-2 dark:hover:bg-slate-600/25">
+                        <p className='text-lg font-semibold dark:text-slate-100 '><Link to="/">Projects</Link></p>
                     </li>
-                    <li className="ml-10 text-lg font-semibold dark:text-slate-50">
-                        <Link to="/contact">Contact</Link>
+                    <li className="ml-10  hover:bg-slate-200/60 rounded-full transition-all ease-in px-2 dark:hover:bg-slate-600/25">
+                        <p className='text-lg font-semibold  dark:text-slate-100 '><Link to="/">Contact</Link></p>
                     </li>
                 </ul>
                 <div className="md:hidden">
