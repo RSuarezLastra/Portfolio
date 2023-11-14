@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 
@@ -23,11 +24,11 @@ const Nav = () => {
     }
 
     return (
-        <>
-            <nav className=" mx-auto w-3/4 rounded-full bg-slate-50 dark:bg-neutral-800 flex justify-between p-4 md:px-10 shadow-xl">
-                <div>
-                    <p>logo</p>
-                </div>
+        <header className='relative z-[1000]'>
+            <motion.nav className="w-1/2 rounded-full bg-white bg-opacity-40  dark:bg-neutral-800 backdrop-blur-[0.5rem] flex justify-center p-4 md:px-8 shadow-xl fixed"
+            initial={{y:-100, x:'50%' , opacity:0}}
+            animate={{y:0, x:'50%' , opacity:1}}
+            transition={{ delay: 0.5 }}>
                 <ul className=" hidden md:flex justify-evenly items-center">
                     <li className='flex items-center'>
                         <button onClick={handleChangeTheme} className='dark:text-slate-100'>
@@ -50,8 +51,8 @@ const Nav = () => {
                 <div className="md:hidden">
                     <AiOutlineMenu size={25} />
                 </div>
-            </nav>
-        </>
+            </motion.nav>
+        </header>
     )
 }
 
