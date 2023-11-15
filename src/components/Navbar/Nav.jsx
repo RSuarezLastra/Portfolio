@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import links from './links';
 
-
 const Nav = () => {
 
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
