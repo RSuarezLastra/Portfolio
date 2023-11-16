@@ -1,13 +1,12 @@
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import ButtonTwo from './buttonTwo';
-import { AiFillPhone, AiFillMail } from 'react-icons/ai';
-import { FaMapMarkedAlt  } from 'react-icons/fa';
+import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import { IoMdSend  } from 'react-icons/io';
 
 const Contact = () => {
     return (
-        <section id='contact' className='h-screen w-3/4 lg:w-2/3 mx-auto '>
+        <section id='contact' className='h-screen w-3/4 lg:w-2/3 mx-auto scroll-mt-24'>
             <h2 className="text-center font-semibold text-3xl mb-8 dark:text-slate-100 scroll-mt-[100rem]">CONTACT <span className='text-seance-700'>ME</span></h2>
 
             <div className=' bg-shark-200  px-0 lg:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 rounded-xl'>
@@ -16,15 +15,15 @@ const Contact = () => {
                     <p className='text-xl mb-16'>If you are interested in collaborating or need my services, do not hesitate to contact me.</p>
                     <div className='flex flex-col'>
                         <div className='flex mb-8'>
-                            <AiFillMail size={30} className='text-seance-800' />
+                            <FiMail size={30} className='text-seance-800' />
                             <p className='ml-4 text-lg'>raul.slastra@gmail.com</p>
                         </div>
                         <div className='flex mb-8'>
-                            <AiFillPhone size={30} className='text-seance-800' />
+                            <FiPhone size={30} className='text-seance-800' />
                             <p className='ml-4 text-lg'>+52 9933184599</p>
                         </div>
                         <div className='flex'>
-                            <FaMapMarkedAlt  size={30} className='text-seance-800' />
+                            <FiMapPin  size={30} className='text-seance-800' />
                             <p className='ml-4 text-lg'>Villahermosa, México</p>
                         </div>
                     </div>

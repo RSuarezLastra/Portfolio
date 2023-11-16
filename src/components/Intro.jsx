@@ -3,7 +3,7 @@ import imagen from '/src/img/foto_raul.jpeg';
 
 const Intro = () => {
     return (
-        <div id='about' className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 sm:min-h-screen p-4 md:p-10 lg:p-16 w-10/12 mx-auto">
+        <div id='about' className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 sm:min-h-screen p-4 md:p-10 lg:p-16 w-10/12 mx-auto scroll-mt-20">
             <div className="flex flex-col justify-center">
                 <h2 className="text-center sm:text-left text-3xl sm:text-5xl font-semibold mb-1 lg:mb-4 dark:text-slate-100">
                     ABOUT <span className='text-seance-700'>ME</span></h2>
