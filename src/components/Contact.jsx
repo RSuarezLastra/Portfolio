@@ -1,21 +1,39 @@
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-import ButtonOne from './Button'
+import ButtonTwo from './buttonTwo';
+import { AiFillPhone, AiFillMail } from 'react-icons/ai';
+import { FaMapMarkedAlt  } from 'react-icons/fa';
+import { IoMdSend  } from 'react-icons/io';
 
 const Contact = () => {
     return (
-        <section className='h-screen w-3/4 mx-auto '>
+        <section className='h-screen w-3/4 lg:w-2/3 mx-auto '>
+            <h2 className="text-center font-semibold text-3xl mb-8 dark:text-slate-100">CONTACT <span className='text-seance-700'>ME</span></h2>
 
-            <div className=' bg-seance-950 px-6 grid grid-cols-2 rounded-xl'>
-                <div className='py-10 px-4'>
-                    <h2 className='text-2xl text-white mb-10'>Contact Information</h2>
-                    <p className='text-2xl text-white'>Diego se la come</p>
+            <div className=' bg-shark-200  px-0 lg:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 rounded-xl'>
+                <div className='hidden md:block  py-10 '>
+                    <h3 className='text-2xl font-semibold mb-4'>Contact Information</h3>
+                    <p className='text-xl mb-16'>If you are interested in collaborating or need my services, do not hesitate to contact me.</p>
+                    <div className='flex flex-col'>
+                        <div className='flex mb-8'>
+                            <AiFillMail size={30} className='text-seance-800' />
+                            <p className='ml-4 text-lg'>raul.slastra@gmail.com</p>
+                        </div>
+                        <div className='flex mb-8'>
+                            <AiFillPhone size={30} className='text-seance-800' />
+                            <p className='ml-4 text-lg'>+52 9933184599</p>
+                        </div>
+                        <div className='flex'>
+                            <FaMapMarkedAlt  size={30} className='text-seance-800' />
+                            <p className='ml-4 text-lg'>Villahermosa, México</p>
+                        </div>
+                    </div>
                 </div>
-                <div className='py-10 px-4'>
+                <div className='py-10 '>
                     <Box
                         className='bg-slate-100 rounded-xl p-5'
                         component="form">
-                        <h2 className="text-center font-semibold text-3xl mb-8 ">CONTACT <span className='text-seance-700'>ME</span></h2>
+                        <h3 className="text-center font-semibold text-3xl mb-6" >Send a message</h3>
                         <div >
                             <TextField
                                 id='standard-basic'
@@ -41,7 +59,7 @@ const Contact = () => {
                                 fullWidth />
                         </div>
                         <div className='mt-20 grid place-items-end'>
-                            <ButtonOne label='Send' />
+                            <ButtonTwo label='SEND' icon={<IoMdSend/>} />
                         </div>
                     </Box>
 
