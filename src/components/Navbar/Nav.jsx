@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import links from './links';
@@ -37,7 +36,7 @@ const Nav = () => {
                     {links.map(lin => (
                         <li key={lin.hash}
                             className="ml-4 sm:ml-10 hover:bg-slate-200/60 dark:hover:bg-slate-600/25 rounded-full transition-all ease-in px-0 sm:px-2 ">
-                            <Link className='text-sm sm:text-lg font-semibold hover:text-gray-950 dark:text-slate-300 dark:hover:text-slate-50' to={lin.hash}>{lin.name}</Link>
+                            <a className='text-sm sm:text-lg font-semibold hover:text-gray-950 dark:text-slate-300 dark:hover:text-slate-50' href={lin.hash}>{lin.name}</a>
                         </li>
                     ))}
                 </ul>

@@ -7,8 +7,8 @@ import { IoMdSend  } from 'react-icons/io';
 
 const Contact = () => {
     return (
-        <section className='h-screen w-3/4 lg:w-2/3 mx-auto '>
-            <h2 className="text-center font-semibold text-3xl mb-8 dark:text-slate-100">CONTACT <span className='text-seance-700'>ME</span></h2>
+        <section id='contact' className='h-screen w-3/4 lg:w-2/3 mx-auto '>
+            <h2 className="text-center font-semibold text-3xl mb-8 dark:text-slate-100 scroll-mt-[100rem]">CONTACT <span className='text-seance-700'>ME</span></h2>
 
             <div className=' bg-shark-200  px-0 lg:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 rounded-xl'>
                 <div className='hidden md:block  py-10 '>
