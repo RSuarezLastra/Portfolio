@@ -4,7 +4,7 @@ import Skills from './Skills';
 
 const Intro = () => {
     return (
-        <section id='about' className='sm:min-h-screen scroll-mt-10'>
+        <section id='about' className=' min-h-[26rem] sm:min-h-[42rem] scroll-mt-10'>
             <div  className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10   p-4 md:p-10 lg:p-16 w-10/12 mx-auto ">
                 <div className="flex flex-col justify-center">
                     <h2 className="text-center sm:text-left text-3xl sm:text-5xl font-semibold mb-1 lg:mb-4 dark:text-slate-100">
