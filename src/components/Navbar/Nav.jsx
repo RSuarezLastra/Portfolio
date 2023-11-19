@@ -23,13 +23,13 @@ const Nav = () => {
 
     return (
         <header className='relative z-[1000]'>
-            <motion.nav className="top-6  left-1/2 rounded-full bg-white bg-opacity-60 dark:bg-opacity-60  dark:bg-neutral-800 backdrop-blur-[0.5rem] flex justify-center p-4  shadow-xl fixed"
+            <motion.nav className="top-6  left-1/2 rounded-full bg-white bg-opacity-60 dark:bg-opacity-60  dark:bg-neutral-700 backdrop-blur-[0.5rem] flex justify-center p-4  shadow-xl fixed"
                 initial={{ y: -100, x: '-50%', opacity: 0 }}
                 animate={{ y: 0, x: '-50%', opacity: 1 }}
                 transition={{ delay: 0.2 }}>
                 <ul className="flex justify-evenly items-center text-gray-600">
                     <li className='flex items-center'>
-                        <button onClick={handleChangeTheme} className='dark:text-slate-200 dark:hover:text-slate-50 hover:text-gray-950'>
+                        <button onClick={handleChangeTheme} className='dark:text-slate-200 dark:hover:text-slate-50 hover:text-gray-950 '>
                             {theme === 'dark' ? (< BsSunFill size={16} />) : (<BsFillMoonFill size={16} />)}
                         </button>
                     </li>

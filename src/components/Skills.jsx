@@ -17,12 +17,11 @@ const skillsData = [
 
 const Skills = () => {
     return (
-        <div className='w-full  mb-10 sm:mb-20 py-10'>
-            <h2 className="text-center font-semibold text-2xl sm:text-4xl mb-8 md:mb-10 dark:text-slate-200">Skills</h2>
+        <div className='w-full mb-10 sm:mb-20 pb-10'>
             <div className="mx-auto w-3/4 flex flex-wrap gap-4 justify-center ">
                 {skillsData.map((skill, index) => (
-                    <div key={index} className='flex items-center p-2 sm:px-4 h-8 sm:h-12 rounded-xl border border-neutral-500 dark:bg-neutral-400 dark:border-none'>
-                        <div className='flex items-center w-4 sm:w-6 mr-1 sm:mr-2'> {skill.icon}</div>
+                    <div key={index} className='flex items-center p-2 sm:px-4 h-8 sm:h-12 rounded-xl border border-neutral-400   dark:bg-neutral-500 dark:border-neutral-500'>
+                        <div className='flex items-center w-4 sm:w-6 mr-1 sm:mr-3'> {skill.icon}</div>
                         <p className='text-sm sm:text-base md:text-2xl'>{skill.name}</p>
                     </div>
                 ))}

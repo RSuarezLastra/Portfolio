@@ -38,9 +38,9 @@ const Contact = () => {
     
     return (
         <section id='contact' className='h-screen w-3/4 lg:w-2/3 mx-auto scroll-mt-24'>
-            <h2 className="text-center font-semibold text-3xl mb-8 dark:text-slate-100">CONTACT <span className='text-seance-700'>ME</span></h2>
+            <h2 className="text-center font-semibold text-3xl sm:text-5xl mb-8 dark:text-slate-100">CONTACT <span className='text-seance-700'>ME</span></h2>
 
-            <div className=' bg-shark-200 dark:bg-neutral-900  px-0 lg:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 rounded-xl'>
+            <div className=' bg-shark-100 dark:bg-neutral-900  px-0 lg:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 rounded-xl'>
                 <div className='hidden md:block  py-10 '>
                     <h3 className='text-2xl font-semibold mb-4 dark:text-white'>Contact Information</h3>
                     <p className='text-xl mb-16 dark:text-white'>If you are interested in collaborating or need my services, do not hesitate to contact me.</p>
@@ -63,7 +63,7 @@ const Contact = () => {
                     <Box
                         id="contact-form"
                         onSubmit={handleSubmit}
-                        className='bg-slate-100 rounded-xl p-5'
+                        className='bg-slate-50 rounded-xl p-5 dark:bg-neutral-400'
                         component="form">
                         <h3 className="text-center font-semibold text-3xl mb-6" >Send a message</h3>
                         <div >
