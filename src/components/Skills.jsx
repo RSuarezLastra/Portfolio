@@ -1,50 +1,39 @@
-import css from '/src/img/css_logo.png';
-import html from '/src/img/html_logo.png';
-import js from '/src/img/javascript_logo.png';
-import node from '/src/img/nodejs_logo.png';
-import sql from '/src/img/sequelize_logo.png';
-import react from '/src/img/react_logo.png';
-import redux from '/src/img/redux_logo.svg';
-import twind from '/src/img/tailwind_logo.png';
-import ex from '/src/img/express_logo.png';
-import postg from '/src/img/postgresql_logo.png';
+import htmlLogo from '/src/img/html_logo.png';
+import cssLogo from '/src/img/css_logo.png';
+import jsLogo from '/src/img/javascript_logo.png';
+import nodeJsLogo from '/src/img/nodejs_logo.png';
+import sequelizeLogo from '/src/img/sequelize_logo.png';
+import reactLogo from '/src/img/react_logo.png';
+import reduxLogo from '/src/img/redux_logo.svg';
+import tailwindLogo from '/src/img/tailwind_logo.png';
+import expressLogo from '/src/img/express_logo.png';
+import postgresLogo from '/src/img/postgresql_logo.png';
 
+const skillsData = [
+    { name: 'HTML', logo: htmlLogo },
+    { name: 'CSS', logo: cssLogo },
+    { name: 'JavaScript', logo: jsLogo },
+    { name: 'Node.js', logo: nodeJsLogo },
+    { name: 'Sequelize', logo: sequelizeLogo },
+    { name: 'React', logo: reactLogo },
+    { name: 'Redux', logo: reduxLogo },
+    { name: 'Tailwind CSS', logo: tailwindLogo },
+    { name: 'Express', logo: expressLogo },
+    { name: 'PostgreSQL', logo: postgresLogo },
+];
 
 const Skills = () => {
     return (
-        <div id='skills' className='w-full  mt-1 sm:mt-5 mb-10 sm:mb-20 py-10 scroll-mt-16'>
+        <div className='w-full  mt-1 sm:mt-5 mb-10 sm:mb-20 py-10 scroll-mt-16'>
             <h2 className="text-center font-semibold text-4xl mb-20 dark:text-slate-200">Skills</h2>
-            <div className="mx-auto w-3/4 grid  grid-cols-3 sm:grid-cols-4 gap-10 ">
-                <div className='mx-auto w-14 sm:w-20'>
-                    <img src={html} alt="Html logo" />
-                </div>
-                <div className='mx-auto w-14 sm:w-20'>
-                    <img src={css} alt="Css logo" />
-                </div>
-                <div className='mx-auto w-14 sm:w-20'>
-                    <img src={js} alt="JavaScript logo" />
-                </div>
-                <div className='mx-auto my-auto w-14 sm:w-20'>
-                    <img src={react} alt="React logo" />
-                </div>
-                <div className='mx-auto my-auto w-14 sm:w-20'>
-                    <img src={redux} alt="Redux logo" />
-                </div>
-                <div className='mx-auto my-auto w-14 sm:w-20'>
-                    <img src={twind} alt="Tailwind logo" />
-                </div>
-                <div className='mx-auto my-auto w-20 sm:w-32'>
-                    <img src={node} alt="Node js logo" />
-                </div>
-                <div className='mx-auto w-14 sm:w-20'>
-                    <img src={ex} alt="Express logo" />
-                </div>
-                <div className='mx-auto w-14 sm:w-24'>
-                    <img src={postg} alt="PostgrSQL logo" />
-                </div>
-                <div className='mx-auto w-14 sm:w-24'>
-                    <img src={sql} alt="Sequelize logo" />
-                </div>
+            <div className="mx-auto w-3/4 flex flex-wrap gap-5 justify-center ">
+                {skillsData.map((skill, index) => (
+                    <div key={index} className='flex mx-auto border border-black p-2 px-4 rounded-lg'>
+                        <img src={skill.logo} alt={`${skill.name} logo`} className='w-8 h-8 mr-4' />
+                        <p className='text-lg'>{skill.name}</p>
+                    </div>
+                ))}
+
             </div>
         </div>
     )

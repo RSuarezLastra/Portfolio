@@ -23,7 +23,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://formsubmit.co/raul.slastra@gmail.com', form);
+            const response = await axios.post('https://formsubmit.co/88cf3797f98ee48da60a4d6c4c6b628c', form);
 
             if (response.status === 200) {
                 console.log('Correo electrónico enviado con éxito');
@@ -35,6 +35,7 @@ const Contact = () => {
             console.error('Error de red:', error);
         }
     }
+    
     return (
         <section id='contact' className='h-screen w-3/4 lg:w-2/3 mx-auto scroll-mt-24'>
             <h2 className="text-center font-semibold text-3xl mb-8 dark:text-slate-100">CONTACT <span className='text-seance-700'>ME</span></h2>

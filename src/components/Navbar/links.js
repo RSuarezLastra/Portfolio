@@ -9,10 +9,6 @@ const links = [
         hash: '#about'
     },
     {
-        name: 'Skills',
-        hash: '#skills'
-    },
-    {
         name: 'Projects',
         hash: '#projects'
     },
