@@ -1,36 +1,29 @@
-import htmlLogo from '/src/img/html_logo.png';
-import cssLogo from '/src/img/css_logo.png';
-import jsLogo from '/src/img/javascript_logo.png';
-import nodeJsLogo from '/src/img/nodejs_logo.png';
-import sequelizeLogo from '/src/img/sequelize_logo.png';
-import reactLogo from '/src/img/react_logo.png';
-import reduxLogo from '/src/img/redux_logo.svg';
-import tailwindLogo from '/src/img/tailwind_logo.png';
-import expressLogo from '/src/img/express_logo.png';
-import postgresLogo from '/src/img/postgresql_logo.png';
+import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaBootstrap} from 'react-icons/fa';
+import { SiRedux, SiTailwindcss, SiSequelize, SiExpress, SiPostgresql } from 'react-icons/si';
 
 const skillsData = [
-    { name: 'HTML', logo: htmlLogo },
-    { name: 'CSS', logo: cssLogo },
-    { name: 'JavaScript', logo: jsLogo },
-    { name: 'Node.js', logo: nodeJsLogo },
-    { name: 'Sequelize', logo: sequelizeLogo },
-    { name: 'React', logo: reactLogo },
-    { name: 'Redux', logo: reduxLogo },
-    { name: 'Tailwind CSS', logo: tailwindLogo },
-    { name: 'Express', logo: expressLogo },
-    { name: 'PostgreSQL', logo: postgresLogo },
+    { name: 'HTML', icon: <FaHtml5 size={30}/> },
+    { name: 'CSS', icon: <FaCss3Alt size={30}/> },
+    { name: 'JavaScript', icon: <FaJs size={30}/> },
+    { name: 'Node.js', icon: <FaNodeJs size={30}/> },
+    { name: 'React', icon: <FaReact size={30}/> },
+    { name: 'Redux', icon: <SiRedux size={30}/> },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss size={30}/> },
+    { name: 'Sequelize', icon: <SiSequelize size={30}/> },
+    { name: 'Express', icon: <SiExpress size={30}/> },
+    { name: 'PostgreSQL', icon: <SiPostgresql size={30}/> },
+    { name: 'Bootstrap', icon: <FaBootstrap size={30}/> },
 ];
 
 const Skills = () => {
     return (
-        <div className='w-full  mt-1 sm:mt-5 mb-10 sm:mb-20 py-10 scroll-mt-16'>
-            <h2 className="text-center font-semibold text-4xl mb-20 dark:text-slate-200">Skills</h2>
-            <div className="mx-auto w-3/4 flex flex-wrap gap-5 justify-center ">
+        <div className='w-full  mb-10 sm:mb-20 py-10'>
+            <h2 className="text-center font-semibold text-2xl sm:text-4xl mb-8 md:mb-10 dark:text-slate-200">Skills</h2>
+            <div className="mx-auto w-3/4 flex flex-wrap gap-4 justify-center ">
                 {skillsData.map((skill, index) => (
-                    <div key={index} className='flex mx-auto border border-black p-2 px-4 rounded-lg'>
-                        <img src={skill.logo} alt={`${skill.name} logo`} className='w-8 h-8 mr-4' />
-                        <p className='text-lg'>{skill.name}</p>
+                    <div key={index} className='flex items-center p-2 sm:px-4 h-8 sm:h-12 rounded-xl border border-neutral-500 dark:bg-neutral-400 dark:border-none'>
+                        <div className='flex items-center w-4 sm:w-6 mr-1 sm:mr-2'> {skill.icon}</div>
+                        <p className='text-sm sm:text-base md:text-2xl'>{skill.name}</p>
                     </div>
                 ))}
 
