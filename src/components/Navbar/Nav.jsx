@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
+import { MdLanguage } from "react-icons/md";
 import links from './links';
 
 const Nav = () => {
@@ -29,14 +30,19 @@ const Nav = () => {
                 transition={{ delay: 0.2 }}>
                 <ul className="flex justify-evenly items-center text-gray-600">
                     <li className='flex items-center'>
-                        <button onClick={handleChangeTheme} className='dark:text-slate-200 dark:hover:text-slate-50 hover:text-gray-950 '>
-                            {theme === 'dark' ? (< BsSunFill size={16} />) : (<BsFillMoonFill size={16} />)}
+                        <button onClick={handleChangeTheme} className='p-1 text-sm sm:text-lg md:text-xl hover:text-gray-950 hover:bg-slate-200/60 dark:text-slate-300 dark:hover:text-slate-50  dark:hover:bg-neutral-700 rounded-full transition-all ease-in'>
+                            {theme === 'dark' ? (< BsSunFill />) : (<BsFillMoonFill />)}
+                        </button>
+                    </li>
+                    <li className='flex items-center'>
+                        <button className='p-1 ml-2 sm:ml-8 text-sm sm:text-lg md:text-xl hover:text-gray-950 hover:bg-slate-200/60 dark:text-slate-300 dark:hover:text-slate-50  dark:hover:bg-neutral-700 rounded-full transition-all ease-in'>
+                            <MdLanguage />
                         </button>
                     </li>
                     {links.map(lin => (
                         <li key={lin.hash}
-                            className="ml-4 sm:ml-10 hover:bg-slate-200/60 dark:hover:bg-slate-600/25 rounded-full transition-all ease-in px-0 sm:px-2 ">
-                            <a className='text-sm sm:text-lg font-semibold hover:text-gray-950 dark:text-slate-300 dark:hover:text-slate-50' href={lin.hash}>{lin.name}</a>
+                            className="ml-3 sm:ml-10 hover:bg-slate-200/60 dark:hover:bg-slate-600/25 rounded-full transition-all ease-in px-0 sm:px-2  dark:hover:bg-neutral-700">
+                            <a className='text-sm sm:text-lg md:text-xl font-semibold hover:text-gray-950 dark:text-slate-300 dark:hover:text-slate-50 ' href={lin.hash}>{lin.name}</a>
                         </li>
                     ))}
                 </ul>
