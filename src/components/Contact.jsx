@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import ButtonTwo from './buttonTwo';
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import { IoMdSend } from 'react-icons/io';
-import axios from 'axios';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
@@ -22,13 +21,18 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
-            const response = await axios.post('https://formsubmit.co/88cf3797f98ee48da60a4d6c4c6b628c', form);
-
-            if (response.status === 200) {
+            const response = await fetch('http://localhost:3001/enviar-correo', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                mode: 'cors',
+                body: JSON.stringify(form),
+            });
+            if (response.ok) {
                 console.log('Correo electrónico enviado con éxito');
-                document.getElementById('contact-form').reset();
+                e.target.reset();
             } else {
                 console.error('Error al enviar el correo electrónico');
             }
