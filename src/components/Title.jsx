@@ -4,7 +4,7 @@ import { AiOutlineDownload, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
 const Title = () => {
     return (
-        <div id='home' className="mx-auto w-3/4 grid items-center min-h-[26rem]  sm:min-h-[37.5rem] pt-10 sm:pt-20">
+        <div id='home' className="mx-auto w-3/4 grid items-center min-h-[26rem]  sm:min-h-[38rem] pt-10 sm:pt-20 mb-5 sm:mb-20">
             <div className='flex flex-col ml-0 sm:ml-20'>
                 <h1 className="text-center sm:text-left text-4xl sm:text-7xl md:text-8xl font-semibold mb-1 lg:mb-4 dark:text-slate-100">
                     Hi, I'm <span className='text-seance-700'>Raul Suarez</span>  Fullstack developer</h1>
