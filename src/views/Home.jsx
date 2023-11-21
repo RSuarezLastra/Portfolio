@@ -1,7 +1,7 @@
 import Nav from "../components/Navbar/Nav";
 import Title from "../components/Title";
 import Intro from "../components/Intro";
-import Projects from "../components/Projects";
+import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact";
 
 const Home = () => {
