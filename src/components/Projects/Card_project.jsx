@@ -23,7 +23,7 @@ const Card_project = ({ title, description, tags, imgUrl }) => {
                 <p className="mt-2 leading-relaxed dark:text-slate-100">{description}</p>
                 <ul className="flex flex-wrap gap-2 mt-4 sm:mt-auto">
                     {tags.map((tag, index) => (
-                        <li key={index} className=" text-white rounded-full uppercase px-3 py-1 tracking-wider  bg-seance-800">{tag}</li>
+                        <li key={index} className=" text-white rounded-full uppercase px-3 py-1 tracking-wider  bg-neutral-600">{tag}</li>
                     ))}
                 </ul>
             </div>

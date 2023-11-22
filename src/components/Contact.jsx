@@ -44,7 +44,7 @@ const Contact = () => {
     return (
         <motion.section
             id='contact'
-            className='h-screen w-3/4 lg:w-2/3 mx-auto scroll-mt-24'
+            className='h-[42rem] md:max-h-screen w-3/4 lg:w-2/3 mx-auto scroll-mt-24'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -74,9 +74,9 @@ const Contact = () => {
                     <Box
                         id="contact-form"
                         onSubmit={handleSubmit}
-                        className='bg-slate-50 rounded-xl p-5 dark:bg-neutral-300'
+                        className='bg-slate-50 rounded-xl p-5 dark:bg-neutral-400'
                         component="form">
-                        <h3 className="text-center font-semibold text-3xl mb-6" >Send a message</h3>
+                        <h3 className="text-center font-semibold text-2xl sm:text-3xl mb-4 sm:mb-6" >Send a message</h3>
                         <div >
                             <TextField
                                 id='name'
