@@ -6,7 +6,7 @@ import Contact from "../components/Contact";
 
 const Home = () => {
     return (
-        <div className="bg-shark-100 dark:bg-neutral-900 min-h-screen w-full">
+        <div className="bg-shark-100 dark:bg-neutral-900 min-h-screen w-full flex flex-col items-center px-4">
             
             <Nav />
             <Title/>

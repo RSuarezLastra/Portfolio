@@ -4,7 +4,19 @@ const info_project = [
     {
         title: 'Rock & EDM Festival',
         description: 'Static page that renders information from a Rock and EDM festival, the objective of making it was to learn the SASS preprocessor',
-        tags:['html', 'sass','js','gulp'],
+        tags:['html', 'sass','javaScript','gulp'],
+        imgUrl:rockEdm
+    },
+    {
+        title: 'Rock & EDM Festival',
+        description: 'Static page that renders information from a Rock and EDM festival, the objective of making it was to learn the SASS preprocessor',
+        tags:['html', 'sass','javaScript','gulp'],
+        imgUrl:rockEdm
+    },
+    {
+        title: 'Rock & EDM Festival',
+        description: 'Static page that renders information from a Rock and EDM festival, the objective of making it was to learn the SASS preprocessor',
+        tags:['html', 'sass','javaScript','gulp'],
         imgUrl:rockEdm
     }
 ]

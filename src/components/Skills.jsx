@@ -33,7 +33,7 @@ const fadeInAnimationVariants = {
 const Skills = () => {
     return (
         <div className='w-full mb-10 sm:mb-20 pb-10'>
-            <ul className="mx-auto w-3/4 flex flex-wrap gap-4 justify-center ">
+            <ul className="mx-auto sm:w-3/4 flex flex-wrap gap-4 justify-center ">
                 {skillsData.map((skill, index) => (
                     <motion.li
                         key={index}

@@ -24,7 +24,7 @@ const Nav = () => {
 
     return (
         <header className='relative z-[1000]'>
-            <motion.nav className="top-6  left-1/2 rounded-full bg-white bg-opacity-60 dark:bg-opacity-60  dark:bg-neutral-700 backdrop-blur-[0.5rem] flex justify-center p-4  shadow-xl fixed"
+            <motion.nav className="top-6  left-1/2 rounded-full bg-white bg-opacity-60 dark:bg-opacity-60   backdrop-blur-[0.5rem] flex justify-center p-4  shadow-2xl  fixed dark:bg-neutral-700  "
                 initial={{ y: -100, x: '-50%', opacity: 0 }}
                 animate={{ y: 0, x: '-50%', opacity: 1 }}
                 transition={{ delay: 0.2 }}>
