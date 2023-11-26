@@ -17,20 +17,22 @@ const Card_project = ({ title, description, tags, imgUrl }) => {
                 scale: scaleProgres,
                 opacity: opacityProgres
             }}
-            className="bg-gray-50  dark:bg-neutral-800  max-w-[42rem] border border-black/10 overflow-hidden rounded-lg pr-0 lg:pr-6 relative h-[20rem] mb-4 sm:mb-8 group group-even:pl-8 ">
-            <div className="pt-4 pb-3 sm:pb-6 px-5 sm:pl-6 sm:pr-2 md:pt-6 lg:pt-10 sm:max-w-[50%] flex flex-col h-full md:group-even:ml-[18.25rem] lg:group-even:ml-[20rem]">
+            className="bg-gray-50  dark:bg-neutral-800  max-w-[42rem] border border-black/10  rounded-xl  grid  grid-cols-1 sm:grid-cols-2">
+            <div className="pt-4 pb-3 sm:pb-6 px-5 sm:pl-6 sm:pr-2 md:pt-6 lg:pt-10  flex flex-col h-full ">
                 <h3 className="text-lg md:text-xl lg:text-2xl font-semibold dark:text-slate-100">{title}</h3>
                 <p className="mt-2 leading-relaxed dark:text-slate-100">{description}</p>
-                <ul className="flex flex-wrap gap-2 mt-4 sm:mt-auto">
+                <ul className="flex flex-wrap gap-2 mt-2 md:mt-5 ">
                     {tags.map((tag, index) => (
                         <li key={index} className=" text-white text-xs md:text-base  rounded-full uppercase px-2 lg:px-3 py-1 tracking-wider  bg-seance-800">{tag}</li>
                     ))}
                 </ul>
             </div>
-            <img
-                src={imgUrl}
-                alt={title}
-                className="absolute bottom-0 -right-40 w-[28.25rem] rounded-t-xl shadow-2xl group-even:right-[initial] group-even:-left-40  sm:h-56 md:h-64 " />
+            <div className="md:p-4 flex justify-center items-center relative overflow-hidden rounded-xl ">
+                <img
+                    src={imgUrl}
+                    alt={title}
+                    className="rounded-xl  shadow-2xl  sm:absolute bottom-0 left-4 min-h-[10.5rem] sm:h-[12.5rem] md:h-[13.5rem] lg:h-[14.5rem]  object-left object-cover " />
+            </div>
         </motion.section>
 
     );
