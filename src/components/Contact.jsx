@@ -22,7 +22,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3001/enviar-correo', {
+            const response = await fetch('https://portfolio-back-steel.vercel.app/enviar-correo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
