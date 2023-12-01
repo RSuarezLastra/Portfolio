@@ -1,11 +1,12 @@
-import rockEdm from '../../img/festival_img.png'
+import rockEdm from '../../img/festival_img.png';
+import Carrito from '../../img/CarritoDeCompras.png';
 
 const info_project = [
     {
-        title: 'Rock & EDM Festival',
+        title: 'Shopping Cart',
         description: 'Static page that renders information from a Rock and EDM festival, the objective of making it was to learn the SASS preprocessor',
-        tags:['html', 'sass','javaScript','gulp'],
-        imgUrl:rockEdm
+        tags:['html', 'bootstrap','javaScript'],
+        imgUrl:Carrito
     },
     {
         title: 'Rock & EDM Festival',
