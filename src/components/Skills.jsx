@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaBootstrap } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaBootstrap, FaGitAlt } from 'react-icons/fa';
 import { SiRedux, SiTailwindcss, SiSequelize, SiExpress, SiPostgresql } from 'react-icons/si';
 
 const skillsData = [
@@ -7,6 +7,7 @@ const skillsData = [
     { name: 'CSS', icon: <FaCss3Alt size={30} /> },
     { name: 'JavaScript', icon: <FaJs size={30} /> },
     { name: 'Node.js', icon: <FaNodeJs size={30} /> },
+    { name: 'Git', icon: <FaGitAlt size={30} /> },
     { name: 'React', icon: <FaReact size={30} /> },
     { name: 'Redux', icon: <SiRedux size={30} /> },
     { name: 'Tailwind CSS', icon: <SiTailwindcss size={30} /> },
