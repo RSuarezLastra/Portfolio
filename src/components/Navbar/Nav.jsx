@@ -34,11 +34,11 @@ const Nav = () => {
                             {theme === 'dark' ? (< BsSunFill />) : (<BsFillMoonFill />)}
                         </button>
                     </li>
-                    <li className='flex items-center'>
+                    {/* <li className='flex items-center'>
                         <button className='p-1 ml-2 sm:ml-8 text-sm sm:text-lg md:text-xl hover:text-gray-950 hover:bg-slate-200/60 dark:text-slate-300 dark:hover:text-slate-50  dark:hover:bg-neutral-700 rounded-full transition-all ease-in'>
                             <MdLanguage />
                         </button>
-                    </li>
+                    </li> */}
                     {links.map(lin => (
                         <li key={lin.hash}
                             className="ml-3 sm:ml-10 hover:bg-slate-200/60 dark:hover:bg-slate-600/25 rounded-full transition-all ease-in px-0 sm:px-2  dark:hover:bg-neutral-700">
