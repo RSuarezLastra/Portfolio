@@ -74,7 +74,7 @@ const Contact = () => {
                     <Box
                         id="contact-form"
                         onSubmit={handleSubmit}
-                        className='bg-slate-50 rounded-xl p-5 dark:bg-neutral-800 '
+                        className='bg-slate-50 rounded-xl p-5 dark:bg-neutral-700 '
                         component="form">
                         <h3 className="text-center font-semibold text-2xl sm:text-3xl mb-4 sm:mb-6  dark:text-slate-100" >Send a message</h3>
                         <div >

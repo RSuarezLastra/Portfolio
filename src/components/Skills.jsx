@@ -38,14 +38,14 @@ const Skills = () => {
                 {skillsData.map((skill, index) => (
                     <motion.li
                         key={index}
-                        className='flex items-center p-2 sm:px-3 h-8 sm:h-12 rounded-full border border-neutral-400    dark:border-neutral-500'
+                        className='flex items-center p-2 sm:px-3 h-8 sm:h-10 rounded-full border border-neutral-400    dark:border-neutral-500'
                         variants={fadeInAnimationVariants}
                         initial='initial'
                         whileInView='animate'
                         viewport={{ once: true }}
                         custom={index}>
                         <div className='flex items-center w-4 sm:w-6 mr-1 sm:mr-2 dark:text-neutral-300'> {skill.icon}</div>
-                        <p className='text-sm sm:text-base md:text-lg dark:text-neutral-300'>{skill.name}</p>
+                        <p className='text-sm sm:text-base dark:text-neutral-300'>{skill.name}</p>
                     </motion.li>
                 ))}
 

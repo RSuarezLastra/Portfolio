@@ -23,7 +23,7 @@ const Card_project = ({ title, description, tags, imgUrl }) => {
                 <p className="mt-2 leading-relaxed dark:text-slate-100">{description}</p>
                 <ul className="flex flex-wrap gap-2 mt-2 md:mt-5 ">
                     {tags.map((tag, index) => (
-                        <li key={index} className=" text-white text-xs md:text-base  rounded-full uppercase px-2 lg:px-3 py-1 tracking-wider  bg-seance-800">{tag}</li>
+                        <li key={index} className=" text-white text-xs md:text-base  rounded-full uppercase px-2 py-1   bg-seance-800">{tag}</li>
                     ))}
                 </ul>
             </div>
@@ -31,7 +31,7 @@ const Card_project = ({ title, description, tags, imgUrl }) => {
                 <img
                     src={imgUrl}
                     alt={title}
-                    className="rounded-xl  shadow-2xl  sm:absolute bottom-0 left-4 min-h-[10.5rem] sm:h-[12.5rem] md:h-[13.5rem] lg:h-[14.5rem]  object-left object-cover " />
+                    className="rounded-xl  shadow-2xl  sm:absolute bottom-0 left-4 min-h-[11.5rem] sm:h-[12.5rem] md:h-[13.5rem] lg:h-[14.5rem]  object-left object-cover " />
             </div>
         </motion.section>
 
